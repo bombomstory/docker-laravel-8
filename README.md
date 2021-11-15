@@ -1,4 +1,4 @@
-# Docker - Laravel
+# ติดตั้ง Docker - Laravel เวอร์ชั่น 8
 
 ![Docker](https://github.com/supermavster/docker-laravel-8/workflows/Docker/badge.svg)
 
@@ -20,7 +20,7 @@ Ports used in the project:
 
 ## Use
 
-To get started, make sure you have [Docker installed](https://docs.docker.com/) on your system and [Docker Compose](https://docs.docker.com/compose/install/), and then clone this repository.
+ก่อนเริ่มโปรดตรวจสอบให้แน่ใจว่าได้ทำการติดตั้ง Docker [Docker installed](https://docs.docker.com/) และ Docker_Compose [Docker Compose](https://docs.docker.com/compose/install/) ลงในเครื่องแล้ว จากนั้นทำการ clone repository ดังนี้
 
 1. Clone โปรเจ็ค:
 
@@ -28,10 +28,11 @@ To get started, make sure you have [Docker installed](https://docs.docker.com/) 
    git clone https://github.com/bombomstory/docker-laravel-8.git
    ```
 
-2. Inside the folder `docker-laravel-8` and Generate your own `.env` to docker compose with the next command:
+2. ทำการเข้าไปในไดเร็คทอรี่ `docker-laravel-8` เพื่อสร้างไฟล์ `.env` สำหรับใช้ใน Docker_Compose โดยใช้คำสั่งดังนี้:
 
    ```sh
-   cp .env.example .env
+   cd docker-laravel-8
+   copy .env.example .env
    ```
 
 3. You need **Create** or **Put** your laravel project in the folder source; to create follow the next instructions [Here](source/README.md).
