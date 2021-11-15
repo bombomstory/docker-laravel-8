@@ -22,10 +22,10 @@ Ports used in the project:
 
 To get started, make sure you have [Docker installed](https://docs.docker.com/) on your system and [Docker Compose](https://docs.docker.com/compose/install/), and then clone this repository.
 
-1. Clone this project:
+1. Clone โปรเจ็ค:
 
    ```sh
-   git clone https://github.com/supermavster/docker-laravel-8.git
+   git clone https://github.com/bombomstory/docker-laravel-8.git
    ```
 
 2. Inside the folder `docker-laravel-8` and Generate your own `.env` to docker compose with the next command:
