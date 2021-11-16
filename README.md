@@ -44,7 +44,13 @@ Ports used in the project:
    git clone https://github.com/laravel/laravel.git
    ```   
 
-##ย้าย path เพื่อเข้าไปติดตั้งระบบงานใน laravel ด้วยคำสั่งนี้
+##ย้าย ไฟล์สภาพแวดล้อม .env ไปไว้ใน laravel ด้วยคำสั่งนี้
+
+   ```sh
+   cd laravelmove .env laravel/
+   ```   
+
+##เปลี่ยนไดเร็คทอรี่เข้าไปทำงานใน laravel ด้วยคำสั่งนี้
 
    ```sh
    cd laravel
