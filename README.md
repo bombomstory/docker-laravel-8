@@ -47,7 +47,7 @@ Ports used in the project:
 ##ย้าย ไฟล์สภาพแวดล้อม .env ไปไว้ใน laravel ด้วยคำสั่งนี้
 
    ```sh
-   cd laravelmove .env laravel/
+   move .env laravel/
    ```   
 
 ##เปลี่ยนไดเร็คทอรี่เข้าไปทำงานใน laravel ด้วยคำสั่งนี้
