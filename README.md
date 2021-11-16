@@ -36,19 +36,9 @@ Ports used in the project:
    copy .env.example .env
    ```
 
-3. You need **Create** or **Put** your laravel project in the folder source; to create follow the next instructions [Here](source/README.md).
+3. สร้าง Project laravel ตามนี้
 
-4. Build the project whit the next commands:
-
-   ```sh
-   docker-compose up --build
-   ```
-
----
-
-## Remember
-
-The configuration of the database **must be the same on both sides** .
+## อย่าลืม ทำการแก้ไขกำหนดค่าชื่อฐานข้อมูล username password สำหรับจัดการฐานข้อมูลในไฟล์ .env ก่อนสั่งสรา้ง Project laravel
 
 ```dotenv
 # .env
@@ -80,27 +70,93 @@ DB_HOST=mysql
 
 ---
 
-## Special Cases
+### สร้างโปรเจ็ค Laravel ด้วยคำสั่งด้านล่างนี้
 
-To Down and remove the volumes we use the next command:
+```sh
+docker-compose run --rm composer create-project laravel/laravel .
+```
+
+### Copy Environment
+
+```sh
+copy .env.example .env
+```
+
+---
+
+### Install Libraries from Composer
+
+```sh
+docker-compose run --rm composer install
+```
+
+### ติดตั้ง Libraries จาก Node
+
+```sh
+docker-compose run --rm npm install
+```
+
+### Clear/Clean the project
+
+```sh
+docker-compose run --rm artisan clear:data
+docker-compose run --rm artisan cache:clear
+docker-compose run --rm artisan view:clear
+docker-compose run --rm artisan route:clear
+docker-compose run --rm artisan clear-compiled
+docker-compose run --rm artisan config:cache
+docker-compose run --rm artisan storage:link
+```
+
+### สร้าง Keys
+
+```sh
+docker-compose run --rm artisan key:generate
+```
+
+### รัน migrations
+
+```sh
+docker-compose run --rm artisan migrate --seed
+```
+
+### รัน Passport (Optional)
+
+```sh
+docker-compose run --rm artisan passport:install
+```
+
+
+4. สร้าง LEMP Laravel ด้วยคำสั่ง:
+
+   ```sh
+   docker-compose up --build
+   ```
+
+---
+
+
+## คำสั่งอื่น ๆ
+
+ปิดหรือลบโปรเจ็คด้วยคำสั่ง:
 
 ```sh
 docker-compose down -v
 ```
 
-Update Composer:
+อัพเดท Composer ด้วยคำสั่ง:
 
 ```sh
 docker-compose run --rm composer update
 ```
 
-Run compiler (Webpack.mix.js) or Show the view compiler in node:
+รัน compiler (Webpack.mix.js) หรือแสดง view compiler ใน node:
 
 ```sh
 docker-compose run --rm npm run dev
 ```
 
-Run all migrations:
+รัน migrations ทุกตัว:
 
 ```sh
 docker-compose run --rm artisan migrate
