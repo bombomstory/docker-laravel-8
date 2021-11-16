@@ -37,6 +37,11 @@ Ports used in the project:
    ```
 
 3. สร้าง Project laravel ตามนี้
+   โหลดซอร์สโค้ด laravel มาไว้ในเครื่องก่อน ด้วยคำสั่งนี้
+
+   ```sh
+   git clone https://github.com/laravel/laravel.git
+   ```   
 
 ## อย่าลืม ทำการแก้ไขกำหนดค่าชื่อฐานข้อมูล username password สำหรับจัดการฐานข้อมูลในไฟล์ .env ก่อนสั่งสรา้ง Project laravel
 
