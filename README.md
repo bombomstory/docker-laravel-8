@@ -24,6 +24,7 @@ Ports used in the project:
 
 1. Clone โปรเจ็ค:
 
+   เปิด Command Promt ด้วยสิทธิ์ Administrator แล้วทำการ clone git ดังนี้ (อย่าลืมติดตั้งโปรแกรม git ลงในเครื่องก่อน)
    ```sh
    git clone https://github.com/bombomstory/docker-laravel-8.git
    ```
