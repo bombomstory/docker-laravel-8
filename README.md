@@ -1,12 +1,12 @@
-# ติดตั้ง Docker - Laravel เวอร์ชั่น 8
+# การติดตั้ง Docker - Laravel เวอร์ชั่น 8
 
 ![Docker](https://github.com/supermavster/docker-laravel-8/workflows/Docker/badge.svg)
 
 ![Image](https://repository-images.githubusercontent.com/309769351/1c0dfc80-1def-11eb-9e5c-641da3e3c9b4)
 
-A pretty simplified Docker Compose workflow that sets up a LEMP (Linux, NGINX, MySQL, PHP) network of containers for local Laravel development.
+ขั้นตอนการติดตั้ง LEMP (Linux, NGINX, MySQL, PHP) ผ่าน Docker-Composer แบบง่ายเหมาะสำหรับการพัฒนา Laravel บน localhost
 
-## Ports
+## ค่า default port ที่ตั้งไว้ตามสคริป
 
 Ports used in the project:
 | Software | Port |
@@ -18,7 +18,7 @@ Ports used in the project:
 | **xdebug** | 9001 |
 | **redis** | 6379 |
 
-## Use
+## ขั้นตอนการติดตั้ง
 
 ก่อนเริ่มโปรดตรวจสอบให้แน่ใจว่าได้ทำการติดตั้ง Docker [Docker installed](https://docs.docker.com/) และ Docker_Compose [Docker Compose](https://docs.docker.com/compose/install/) ลงในเครื่องแล้ว จากนั้นทำการ clone repository ดังนี้
 
