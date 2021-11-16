@@ -87,14 +87,6 @@ DB_PASSWORD=db_password
 docker-compose run --rm composer create-project laravel/laravel .
 ```
 
-### Copy Environment
-
-```sh
-copy .env.example .env
-```
-
----
-
 ### Install Libraries from Composer
 
 ```sh
