@@ -79,13 +79,6 @@ DB_USERNAME=db_user
 DB_PASSWORD=db_password
 ```
 
-The only change is the `DB_HOST` in the `source/.env` where is called to the container of `mysql`:
-
-```dotenv
-# source/.env
-DB_HOST=mysql
-```
-
 ---
 
 ### สร้างโปรเจ็ค Laravel ด้วยคำสั่งด้านล่างนี้
